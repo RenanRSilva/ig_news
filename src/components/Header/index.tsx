@@ -1,3 +1,5 @@
+import { SignInButton } from '../SigninButton';
+
 import styles from './styles.module.scss'
 
 export function Header() {
@@ -7,9 +9,11 @@ export function Header() {
       <div className={styles.headerContent}>
         <img src="/logo.svg" alt="ig.news" />
         <nav>
-          <a className={styles.ative} href="">Home</a>
-          <a href="">Posts</a>
+          <a className={styles.ative}>Home</a>
+          <a>Posts</a>
         </nav>
+
+        <SignInButton />
       </div>
     </header>
   );
